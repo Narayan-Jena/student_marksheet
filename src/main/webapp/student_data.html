@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    <link rel="stylesheet" href="./style2.css" />
+
+</head>
+<body>
+   <div class="student_data" >
+      <form action="student_data" method="post">
+         <img src="ABCD.png" class="logo">
+         <h2 class="heading">Student Data</h2>
+         <input type="number" name="roll_no" placeholder="Roll_No" class="detail">
+         <input type="text" name="candidate_name" placeholder="Candidate's_Name" class="detail">
+         <input type="text" name="father_name" placeholder="Father's_Name" class="detail">
+         <input type="text" name="mother_name" placeholder="Mother's_Name" class="detail">
+         
+         <div class="date" >
+              <span onclick="addDate()">Date of birth</span>
+         </div>
+         
+         <input type="text" name="school" placeholder="Name of the School" class="detail">
+         <div class="date ">
+          <span onclick="Curent_Date()">Current date</span>
+         </div>
+         <div class="student_mark">
+             <table >
+                <tr>
+                  <th>Subject</th>
+                  <th>OMR Mark</th>
+                  <th>Subjective Mark</th>
+                </tr>
+                <tr>
+                  <td>FLO</td>
+                  <td><input type="number" name="flo_omr" class="table_input"></td>
+                  <td><input type="number" name="flo_sub" class="table_input"></td>
+                </tr>
+                <tr>
+                   <td>SLE</td>
+                   <td><input type="number" name="sle_omr" class="table_input"></td>
+                   <td><input type="number" name="sle_sub" class="table_input"></td>
+                </tr>
+                <tr>
+                 <td>TLH</td>
+                 <td><input type="number" name="tlh_omr" class="table_input"></td>
+                 <td><input type="number" name="tlh_sub" class="table_input"></td>
+              </tr>   
+              <tr>
+                <td>MTH</td>
+                <td><input type="number" name="mth_omr" class="table_input"></td>
+                <td><input type="number" name="mth_sub" class="table_input"></td>
+              </tr>      
+              <tr>
+                <td>GSC</td>
+                <td><input type="number" name="gsc_omr" class="table_input"></td>
+                <td><input type="number" name="gsc_sub" class="table_input"></td>
+              </tr> 
+              <tr>
+                 <td>SSC</td>
+                 <td><input type="number" name="ssc_omr" class="table_input"></td>
+                <td><input type="number" name="ssc_sub" class="table_input"></td>
+              </tr> 
+           </table>
+           <div class="button">
+              <button>Submit</button>
+              <button>Reset</button>
+           </div>
+       </div>
+   </form>
+ </div>
+</body>
+
+<script type="text/javascript">
+   const date=document.querySelectorAll(".date");
+   function addDate(){
+	   date[0].innerHTML="<input type='date' name='dob' class='detail1'>"
+   }
+   function Curent_Date(){
+	   date[1].innerHTML="<input type='date' name='curent_date' class='detail1'>"
+   }
+   
+
+</script>
+</body>
+</html>
